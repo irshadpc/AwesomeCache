@@ -236,7 +236,7 @@ open class Cache<T: NSCoding> {
         // Otherwise, read from disk
         let path = urlForKey(key).path
         if fileManager.fileExists(atPath: path) {
-            return _awesomeCache_unarchiveObjectSafely(path) as? CacheObject
+            return  _awesomeCache_unarchiveObjectSafely(path) as? CacheObject
         }
 
         return nil
